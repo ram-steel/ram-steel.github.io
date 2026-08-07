@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM Portfolio</title>
+    <!-- Render Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Framework File -->
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Master CSS File -->
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- Main JavaScript File -->
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="SteelWorks Logo">
+            </div>
+            <nav>
+                <div class="bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li class="active"><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#journey">Our Journey</a></li>
+                    <li><a href="#vision">Our Vision</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work-process">Work Process</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button><a href="#quote">Get Quote</a></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= LANDING SECTION ================= -->
+    <section class="landing">
+        <div class="container">
+            <div class="content">
+                <div class="main-heading">
+                    <span>Welcome To SteelWorks</span>
+                </div>
+                <div class="heading">
+                    <h1>Building Strong Steel Structures</h1>
+                    <p class="heading-paragraph">
+                        We design, manufacture, and install high-quality steel structures for factories, and industrial projects with precision and reliability, ensuring top safety standards and long-lasting durability for all our client projects.
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button>Our Projects</button>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/hero.jpg" alt="Portfolio Image">
+            </div>
+            
+            <!-- Dynamically Animated Counter Cards -->
+            <div class="cards-pros">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="text">
+                        <div class="number">
+                            <span class="js-counter" data-target="30">0</span>+
+                        </div>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="text">
+                        <div class="number">
+                            <span class="js-counter" data-target="500">0</span>+
+                        </div>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="text">
+                        <div class="number">
+                            <span class="js-counter" data-target="90">0</span>%
+                        </div>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="main-heading">
+                <span>About Our Company</span>
+            </div>
+            <div class="image-left">
+                <img src="img/about.png" alt="About Image">
+            </div>
+            <div class="content-right">
+                <div class="heading">
+                    <h2>About Our Company</h2>
+                    <p class="heading-paragraph">With over two decades of experience, we specialize in delivering high-quality steel structure solutions for industrial, commercial, and infrastructure projects. Our commitment to quality, safety, and customer satisfaction sets us apart in the industry.</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <p>Experienced Engineers</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p>Premium Materials</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>On-Time Delivery</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        <p>Safety Standards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= OUR JOURNEY SECTION ================= -->
+    <section class="journey" id="journey">
+        <div class="container">
+            <div class="main-heading">
+                <span>Our Journey</span>
+            </div>
+
+            <div class="heading">
+                <h2>Building Success Through the Years</h2>
+                <p>
+                    Since our foundation, we have been committed to delivering high-quality steel structures through innovation,
+                    precision, and engineering excellence. Every milestone reflects our dedication to growth, quality,
+                    and long-term partnerships.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <!-- Left Timeline -->
+                <div class="timeline-column left">
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2005</span>
+                            <h3>Company Founded</h3>
+                            <p class="heading-paragraph">
+                                SteelWorks was established with a vision to deliver reliable structural steel solutions
+                                for industrial and commercial projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2009</span>
+                            <h3>100 Projects Completed</h3>
+                            <p class="heading-paragraph">
+                                Successfully delivered over 100 steel construction projects across multiple industries
+                                with outstanding quality.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-earth-africa"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2013</span>
+                            <h3>Regional Expansion</h3>
+                            <p class="heading-paragraph">
+                                Expanded operations to serve clients across neighboring countries
+                                and major industrial zones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2017</span>
+                            <h3>Advanced Manufacturing</h3>
+                            <p class="heading-paragraph">
+                                Introduced CNC cutting machines and automated welding technologies
+                                to improve production efficiency.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2021</span>
+                            <h3>Sustainability Initiative</h3>
+                            <p class="heading-paragraph">
+                                Implemented environmentally responsible manufacturing processes
+                                and optimized production efficiency.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2025</span>
+                            <h3>Looking Ahead</h3>
+                            <p class="heading-paragraph">
+                                Continuing to invest in innovation, advanced technologies,
+                                and long-term partnerships for future growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Line -->
+                <div class="timeline-line"></div>
+
+                <!-- Right Timeline -->
+                <div class="timeline-column right">
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2007</span>
+                            <h3>First Manufacturing Facility</h3>
+                            <p class="heading-paragraph">
+                                Opened our first fabrication workshop equipped with modern steel
+                                processing machinery and skilled engineers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2011</span>
+                            <h3>Quality Certification</h3>
+                            <p class="heading-paragraph">
+                                Achieved internationally recognized quality standards,
+                                reinforcing our commitment to engineering excellence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2015</span>
+                            <h3>Engineering Team Growth</h3>
+                            <p class="heading-paragraph">
+                                Expanded our engineering team with experienced professionals
+                                to manage larger and more complex projects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2019</span>
+                            <h3>500 Projects Milestone</h3>
+                            <p class="heading-paragraph">
+                                Successfully completed over 500 steel structure projects,
+                                serving industrial, commercial, and warehouse sectors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2023</span>
+                            <h3>Strategic Partnerships</h3>
+                            <p class="heading-paragraph">
+                                Established long-term partnerships with contractors,
+                                suppliers, and industrial organizations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= VISION SECTION ================= -->
+    <section class="vision" id="vision">
+        <div class="container">
+            <div class="main-heading">
+                <span>Our Vision</span>
+            </div>
+
+            <div class="content-left">
+                <div class="heading">
+                    <h2>Our Vision</h2>
+                    <p class="heading-paragraph">
+                        To become a trusted leader in the steel structures industry by delivering innovative, durable, and efficient solutions that shape the future of modern construction.
+                        We aim to combine engineering excellence, advanced technology, and uncompromising quality to build structures that stand strong for generations.
+                    </p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="front face">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <h3>Innovation</h3>
+                        </div>
+                        <div class="back face">
+                            <p>We embrace new ideas and technology.</p>
+                            <button>read more..</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="front face">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <h3>Engineering Excellence</h3>
+                        </div>
+                        <div class="back face">
+                            <p>Committed to precision and superior quality.</p>
+                            <button>read more..</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="front face">
+                            <i class="fa-solid fa-leaf"></i>
+                            <h3>Sustainability</h3>
+                        </div>
+                        <div class="back face">
+                            <p>Building a better future with sustainable practices</p>
+                            <button>read more..</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-right">
+                <img src="img/vision.png" alt="Vision Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="main-heading">
+                <span>Our Services</span>
+            </div>
+
+            <div class="heading">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Steel Buildings</h3>
+                    <p>Complete steel building solutions for all types of industrial and commercial applications.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <h3>Warehouses</h3>
+                    <p>Durable and cost-effective warehouse solutions tailored to your needs.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-industry"></i>
+                    <h3>Industrial Sheds</h3>
+                    <p>Custom industrial sheds for various industrial applications.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h3>Steel Fabrication</h3>
+                    <p>Precision fabrication with high-quality materials and advanced technology.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Steel Installation</h3>
+                    <p>Professional installation services by experienced technicians.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Maintenance</h3>
+                    <p>Reliable maintenance and support for long-lasting performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PARTNERS SECTION ================= -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <div class="main-heading">
+                <span>OUR PARTNERS</span>
+            </div>
+
+            <div class="heading">
+                <h2>Trusted By Leading Companies</h2>
+            </div>
+            <div class="logos">
+                <div class="images">
+                    <img src="img/logo-brand-01.png" alt="Brand 1">
+                    <img src="img/logo-brand-02.png" alt="Brand 2">
+                    <img src="img/logo-brand-03.png" alt="Brand 3">
+                    <img src="img/logo-brand-04.png" alt="Brand 4">
+                    <img src="img/logo-brand-05.png" alt="Brand 5">
+                    <img src="img/logo-brand-06.png" alt="Brand 6">
+                    <img src="img/logo-brand-07.png" alt="Brand 7">
+                    <img src="img/logo-brand-08.png" alt="Brand 8">
+                    <img src="img/logo-brand-09.png" alt="Brand 9">
+                    <img src="img/logo-brand-10.png" alt="Brand 10">
+                    <img src="img/logo-brand-11.png" alt="Brand 11">
+                    <img src="img/logo-brand-12.png" alt="Brand 12">
+                    <img src="img/logo-brand-13.png" alt="Brand 13">
+                    <img src="img/logo-brand-14.png" alt="Brand 14">
+                    <img src="img/logo-brand-15.png" alt="Brand 15">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ================= PROJECTS SECTION ================= -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="main-heading">
+                <span>OUR PROJECTS</span>
+            </div>
+
+            <div class="heading">
+                <h2>Featured Projects</h2>
+                <p>
+                    Explore a selection of our most impactful steel structure projects. Quality, precision, and reliability in every build.
+                </p>
+            </div>
+
+            <!-- 3D Pure CSS Carousel Container -->
+            <div class="carousel-container">
+
+                <!-- Pure CSS Controls -->
+                <input type="radio" name="projects" id="p1" checked>
+                <input type="radio" name="projects" id="p2">
+                <input type="radio" name="projects" id="p3">
+                <input type="radio" name="projects" id="p4">
+                <input type="radio" name="projects" id="p5">
+                <input type="radio" name="projects" id="p6">
+                <input type="radio" name="projects" id="p7">
+                <input type="radio" name="projects" id="p8">
+                <input type="radio" name="projects" id="p9">
+                <input type="radio" name="projects" id="p10">
+
+                <!-- Navigation Arrows -->
+                <div class="nav-arrows">
+                    <label for="p10" class="nav-arrow left arrow-left-p1"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p2" class="nav-arrow right arrow-right-p1"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p1" class="nav-arrow left arrow-left-p2"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p3" class="nav-arrow right arrow-right-p2"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p2" class="nav-arrow left arrow-left-p3"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p4" class="nav-arrow right arrow-right-p3"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p3" class="nav-arrow left arrow-left-p4"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p5" class="nav-arrow right arrow-right-p4"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p4" class="nav-arrow left arrow-left-p5"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p6" class="nav-arrow right arrow-right-p5"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p5" class="nav-arrow left arrow-left-p6"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p7" class="nav-arrow right arrow-right-p6"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p6" class="nav-arrow left arrow-left-p7"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p8" class="nav-arrow right arrow-right-p7"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p7" class="nav-arrow left arrow-left-p8"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p9" class="nav-arrow right arrow-right-p8"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p8" class="nav-arrow left arrow-left-p9"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p10" class="nav-arrow right arrow-right-p9"><i class="fa-solid fa-arrow-right"></i></label>
+
+                    <label for="p9" class="nav-arrow left arrow-left-p10"><i class="fa-solid fa-arrow-left"></i></label>
+                    <label for="p1" class="nav-arrow right arrow-right-p10"><i class="fa-solid fa-arrow-right"></i></label>
+                </div>
+
+                <!-- Carousel Cards Track -->
+                <div class="carousel-track">
+
+                    <!-- Card 1: Blue Steel Warehouse Frame -->
+                    <label class="card" id="c1" for="p1">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-01.jpeg" alt="Blue Steel Frame Structure">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-warehouse front-icon"></i>
+                                    <div class="front-title">Steel Canopy Frame</div>
+                                    <div class="front-subtitle">5,200 sqm • 6th of October, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Steel Canopy Frame</h3>
+                                <p class="back-desc">Open-air heavy steel warehouse structure with high-durability blue coated roof panels and concrete foundations.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-warehouse"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Industrial Storage</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Open Steel Frame</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">5,200 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">6th of October, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 2: White Industrial Skeleton -->
+                    <label class="card" id="c2" for="p2">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-02.jpeg" alt="Industrial Steel Skeleton">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-industry front-icon"></i>
+                                    <div class="front-title">Factory Steel Skeleton</div>
+                                    <div class="front-subtitle">7,800 sqm • Ain Sokhna, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Factory Steel Skeleton</h3>
+                                <p class="back-desc">Precision-engineered white coated structural steel frame designed for large manufacturing plant roofs.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-industry"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Manufacturing Plant</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">White Steel Framing</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">7,800 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">Ain Sokhna, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 3: Industrial Park Complex -->
+                    <label class="card" id="c3" for="p3">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-03.jpeg" alt="Industrial Logistics Complex">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-boxes-packing front-icon"></i>
+                                    <div class="front-title">Logistics Park Complex</div>
+                                    <div class="front-subtitle">24,000 sqm • 10th of Ramadan, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Logistics Park Complex</h3>
+                                <p class="back-desc">Comprehensive industrial estate featuring multiple interconnected steel warehouses and administrative blocks.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Logistics Hub</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Multi-Shed Estate</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">24,000 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">10th of Ramadan, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 4: High-Rise Facade Maintenance -->
+                    <label class="card" id="c4" for="p4">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-04.jpeg" alt="High-Rise Structural Maintenance">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-helmet-safety front-icon"></i>
+                                    <div class="front-title">High-Rise Maintenance</div>
+                                    <div class="front-subtitle">Commercial Tower • Cairo, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">High-Rise Maintenance</h3>
+                                <p class="back-desc">Specialized structural installation and high-altitude safety rigging for modern commercial glass & steel facades.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Facade Installation</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Composite High-Rise</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Height</span><span class="spec-val">120 Meters</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">Cairo, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 5: Geodesic Dome Structure -->
+                    <label class="card" id="c5" for="p5">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-05.jpeg" alt="Geodesic Dome Structure">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-globe front-icon"></i>
+                                    <div class="front-title">Steel Geodesic Dome</div>
+                                    <div class="front-subtitle">3,800 sqm • New Capital, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Steel Geodesic Dome</h3>
+                                <p class="back-desc">Complex spherical steel space frame construction engineered for architectural domes and exhibition halls.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-globe"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Exhibition & Arena</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Geodesic Space Frame</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">3,800 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">New Capital, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 6: Arc Space Frame Hangar -->
+                    <label class="card" id="c6" for="p6">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-06.jpeg" alt="Arc Space Frame Hangar">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-plane-arrival front-icon"></i>
+                                    <div class="front-title">Arch Space Frame</div>
+                                    <div class="front-subtitle">10,500 sqm • Alexandria, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Arch Space Frame</h3>
+                                <p class="back-desc">Large curved steel arch truss structure built for clear-span aircraft hangars and sports complexes.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Aviation / Sports</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Curved Space Frame</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">10,500 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">Alexandria, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 7: Commercial Steel Superstructure -->
+                    <label class="card" id="c7" for="p7">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-07.jpeg" alt="Commercial Steel Superstructure">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-building front-icon"></i>
+                                    <div class="front-title">Commercial Framing</div>
+                                    <div class="front-subtitle">6,400 sqm • Giza, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Commercial Framing</h3>
+                                <p class="back-desc">Heavy structural steel beams and braced column framing for multi-story commercial and retail centers.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-building"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Commercial Center</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Heavy I-Beam Skeleton</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">6,400 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">Giza, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 8: Prefabricated Cladded Warehouse -->
+                    <label class="card" id="c8" for="p8">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-08.jpeg" alt="Prefabricated Cladded Warehouse">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-warehouse front-icon"></i>
+                                    <div class="front-title">Prefabricated Warehouse</div>
+                                    <div class="front-subtitle">4,500 sqm • Sadat City, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Prefabricated Warehouse</h3>
+                                <p class="back-desc">Fully enclosed steel storage warehouse featuring insulated sandwich panel cladding and automated roller doors.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-warehouse"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Storage Facility</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Panel Cladded PEB</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">4,500 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">Sadat City, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 9: Heavy Steel Girders & Beams -->
+                    <label class="card" id="c9" for="p9">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-09.jpeg" alt="Custom Steel Beam Fabrication">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-hammer front-icon"></i>
+                                    <div class="front-title">Steel Beam Fabrication</div>
+                                    <div class="front-subtitle">Workshop • Suez, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Steel Beam Fabrication</h3>
+                                <p class="back-desc">Precision cutting, drilling, and custom flange plate welding of heavy industrial steel I-beams.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-hammer"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Heavy Fabrication</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Material</span><span class="spec-val">High-Tensile Structural Steel</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Capacity</span><span class="spec-val">1,200 Tons / Month</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">Suez, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Card 10: Circular Dome Arena aerial -->
+                    <label class="card" id="c10" for="p10">
+                        <div class="card-inner" tabindex="0">
+                            <div class="card-front">
+                                <img src="img/project-10.jpeg" alt="Circular Sports Stadium Roof">
+                                <div class="front-overlay">
+                                    <i class="fa-solid fa-trophy front-icon"></i>
+                                    <div class="front-title">Stadium Arena Roof</div>
+                                    <div class="front-subtitle">18,500 sqm • New Capital, Egypt</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="back-title">Stadium Arena Roof</h3>
+                                <p class="back-desc">Aerial view of a mega circular steel truss roofing system for a world-class indoor sports arena.</p>
+                                <div class="specs-list">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-trophy"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Project Type</span><span class="spec-val">Sports Stadium</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Structure Type</span><span class="spec-val">Circular Lattice Truss</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Area</span><span class="spec-val">18,500 sqm</span></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="spec-info"><span class="spec-label">Location</span><span class="spec-val">New Capital, Egypt</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-view">View Project Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+
+                <!-- Dots Controls -->
+                <div class="dots-nav">
+                    <label for="p1" class="dot" title="Project 1"></label>
+                    <label for="p2" class="dot" title="Project 2"></label>
+                    <label for="p3" class="dot" title="Project 3"></label>
+                    <label for="p4" class="dot" title="Project 4"></label>
+                    <label for="p5" class="dot" title="Project 5"></label>
+                    <label for="p6" class="dot" title="Project 6"></label>
+                    <label for="p7" class="dot" title="Project 7"></label>
+                    <label for="p8" class="dot" title="Project 8"></label>
+                    <label for="p9" class="dot" title="Project 9"></label>
+                    <label for="p10" class="dot" title="Project 10"></label>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
