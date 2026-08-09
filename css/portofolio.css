@@ -1804,8 +1804,6 @@ header nav button a {
 }
 .contact .content-left .infos-contact .info p,
 .contact .content-left .infos-contact .info p a {
-    color: var(--clr-text-main);
-    font-size: 15px;
     text-decoration: none;
 }
 .contact .content-right {
