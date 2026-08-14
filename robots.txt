@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# منع العناكب من أرشفة أي ملفات إدارية أو مؤقتة (إن وجدت)
+Disallow: /admin/
+Disallow: /private/
+
+# إرشاد جوجل بمكان خريطة الموقع المباشر
+Sitemap: https://ram-steel.github.io//sitemap.xml

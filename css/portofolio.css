@@ -59,6 +59,7 @@ html {
 
 body {
     font-family: "Manrope", sans-serif;
+    font-display: swap;
 }
 
 .container {
@@ -71,6 +72,8 @@ body {
 }
 
 /* Breakpoints */
+@media (prefers-reduced-motion: reduce) {   * { transition: none !important; animation: none !important; }}
+
 @media (min-width: 576px) { .container { max-width: 560px; } }
 @media (min-width: 768px) { .container { max-width: 750px; } }
 @media (min-width: 992px) { .container { max-width: 960px; } }
@@ -78,6 +81,7 @@ body {
 @media (min-width: 1400px) { .container { max-width: 1320px; } }
 @media (min-width: 1600px) { .container { max-width: 1500px; } }
 @media (min-width: 1800px) { .container { max-width: 1600px; } }
+
 
 /* Main Component */
 .main-heading span {

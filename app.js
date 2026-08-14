@@ -37,8 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ========================================================== */
     function initDynamicCounters() {
         const counters = document.querySelectorAll(".landing .js-counter");
+        if (!counters.length) return;
 
-        counters.forEach(counter => {
+        const startCounterAnimation = (counter) => {
             const targetValue = parseInt(counter.getAttribute("data-target"), 10);
             if (isNaN(targetValue)) return;
 
@@ -64,7 +65,24 @@ document.addEventListener("DOMContentLoaded", function () {
             };
 
             animateCounter();
-        });
+        };
+
+        // Optimized with IntersectionObserver to trigger animation only when counters are visible
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounterAnimation(entry.target);
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            counters.forEach(counter => observer.observe(counter));
+        } else {
+            // Fallback for older browsers
+            counters.forEach(counter => startCounterAnimation(counter));
+        }
     }
 
     initDynamicCounters();
@@ -74,36 +92,43 @@ document.addEventListener("DOMContentLoaded", function () {
     ========================================================== */
     function initExpandableParagraphs() {
         const expandableParagraphs = document.querySelectorAll(".expandable-paragraph");
+        if (!expandableParagraphs.length) return;
 
+        // Separate Read and Write phases to prevent Layout Thrashing (forced reflow)
+        const overflowingParagraphs = [];
+
+        // 1. READ PHASE
         expandableParagraphs.forEach(paragraph => {
-            // Check if paragraph actually overflows line clamp
-            const isOverflowing = paragraph.scrollHeight > paragraph.clientHeight;
-
-            if (isOverflowing) {
-                paragraph.classList.add("is-overflowing");
-
-                // Create the three dots toggle element
-                const dotsBtn = document.createElement("span");
-                dotsBtn.className = "expandable-dots-btn";
-                dotsBtn.textContent = "...";
-                dotsBtn.title = "Click to expand";
-                paragraph.after(dotsBtn);
-
-                // Expand paragraph on clicking dots or paragraph
-                const expandAction = function (event) {
-                    event.stopPropagation();
-                    
-                    // Collapse any other expanded paragraphs first
-                    document.querySelectorAll(".expandable-paragraph.expanded").forEach(el => {
-                        el.classList.remove("expanded");
-                    });
-
-                    paragraph.classList.add("expanded");
-                };
-
-                dotsBtn.addEventListener("click", expandAction);
-                paragraph.addEventListener("click", expandAction);
+            if (paragraph.scrollHeight > paragraph.clientHeight) {
+                overflowingParagraphs.push(paragraph);
             }
+        });
+
+        // 2. WRITE PHASE
+        overflowingParagraphs.forEach(paragraph => {
+            paragraph.classList.add("is-overflowing");
+
+            // Create the three dots toggle element
+            const dotsBtn = document.createElement("span");
+            dotsBtn.className = "expandable-dots-btn";
+            dotsBtn.textContent = "...";
+            dotsBtn.title = "Click to expand";
+            paragraph.after(dotsBtn);
+
+            // Expand paragraph on clicking dots or paragraph
+            const expandAction = function (event) {
+                event.stopPropagation();
+                
+                // Collapse any other expanded paragraphs first
+                document.querySelectorAll(".expandable-paragraph.expanded").forEach(el => {
+                    el.classList.remove("expanded");
+                });
+
+                paragraph.classList.add("expanded");
+            };
+
+            dotsBtn.addEventListener("click", expandAction);
+            paragraph.addEventListener("click", expandAction);
         });
 
         // Collapse all expanded paragraphs when clicking anywhere outside
@@ -122,8 +147,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function initInfiniteBrands() {
         const imagesContainer = document.querySelector(".partners .logos .images");
         if (imagesContainer) {
-            // Duplicate images container content seamlessly for continuous infinity loop
-            imagesContainer.innerHTML += imagesContainer.innerHTML;
+            // Optimized DOM node cloning with DocumentFragment (avoids HTML string re-parsing & image re-downloads)
+            const fragment = document.createDocumentFragment();
+            Array.from(imagesContainer.children).forEach(child => {
+                fragment.appendChild(child.cloneNode(true));
+            });
+            imagesContainer.appendChild(fragment);
         }
     }
 

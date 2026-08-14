@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://ram-steel.github.io/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- صفحة الهياكل المعدنية -->
+  <url>
+    <loc>https://ram-steel.github.io/#</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- صفحة أعمال التصنيع والتوريد -->
+  <url>
+    <loc>https://ram-steel.github.io/#projects</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- صفحة الجمالونات والشرائح الحديدية -->
+  <url>
+    <loc>https://ram-steel.github.io/#projects</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- صفحة معرض الأعمال والمشاريع السابقة -->
+  <url>
+    <loc>https://ram-steel.github.io/#projects</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- صفحة عن الشركة / الخبرة -->
+  <url>
+    <loc>https://ram-steel.github.io/#about</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- صفحة اتصل بنا / تواصل معنا -->
+  <url>
+    <loc>https://ram-steel.github.io/#contact</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
