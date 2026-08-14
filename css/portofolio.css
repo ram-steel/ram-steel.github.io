@@ -169,7 +169,7 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 0 5px;
+    padding: 0;
     list-style: none;
     width: 100px;
     min-width: max-content;
@@ -184,6 +184,12 @@ header nav ul li a {
     font-size: 16px;
     text-decoration: none;
     color: var(--clr-text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
 }
 
 header nav ul li a.active,
@@ -201,14 +207,19 @@ header nav button {
     border: none;
     background-color: var(--clr-accent);
     min-width: max-content;
-    padding: 15px;
+    padding: 0;
     border-radius: var(--radius-sm);
     cursor: pointer;
+    overflow: hidden;
 }
 
 header nav button a {
     text-decoration: none;
     color: var(--clr-text-light);
+    display: block;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1285px) {
@@ -322,7 +333,6 @@ header nav button a {
 .landing .buttons button {
     border: none;
     cursor: pointer;
-    padding: 25px 40px;
     border-radius: var(--radius-md);
     font-size: 25px;
     font-weight: bold;
@@ -330,6 +340,10 @@ header nav button a {
 }
 .landing .buttons button a {
     text-decoration: none;
+    padding: 25px 40px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 .landing .buttons button:first-child {
     background: var(--clr-accent);
@@ -526,12 +540,15 @@ header nav button a {
     .landing .buttons {
         flex-direction: column;
         width: 100%;
-        gap: 14px;
+        gap: 12px;
     }
     .landing .buttons button {
         width: 100%;
-        padding: 16px 25px;
-        font-size: 1.1rem;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .landing .buttons button a {
+        padding: 12px 20px;
     }
     .landing .cards-pros {
         grid-template-columns: 1fr;
@@ -569,9 +586,12 @@ header nav button a {
         margin-top: 5px;
     }
     .landing .buttons button {
-        padding: 14px 20px;
-        font-size: 1rem;
+        padding: 0;
+        font-size: 0.95rem;
         border-radius: var(--radius-md);
+    }
+    .landing .buttons button a {
+        padding: 11px 16px;
     }
     .landing .image img {
         max-width: 100%;
@@ -639,8 +659,11 @@ header nav button a {
         margin-top: 4px;
     }
     .landing .buttons button {
-        padding: 13px 18px;
-        font-size: 0.95rem;
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    .landing .buttons button a {
+        padding: 10px 14px;
     }
     .landing .cards-pros {
         gap: 12px;
@@ -970,7 +993,7 @@ header nav button a {
     transition: all 1s;
     position: relative;
     width: 200px;
-    height: 220px; /* إعطاء الكارت ارتفاعاً موحداً يستوعب النص الخلفي بالكامل */
+    height: 220px;
 }
 
 .vision .content-left .cards .card:hover {
@@ -979,8 +1002,8 @@ header nav button a {
 
 .vision .content-left .cards .card .face {
     width: 100%;
-    height: 100%; /* جعل الوجه يتمدد لكامل ارتفاع الكارت */
-    background-color: var(--clr-bg-card); /* لون خلفية أبيض لمنع الشفافية والتداخل */
+    height: 100%;
+    background-color: var(--clr-bg-card);
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.504);
     padding: 15px;
     border-radius: var(--radius-lg);
@@ -1105,6 +1128,7 @@ header nav button a {
 
 .services .cards .card:hover {
     box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.438);
+    border: 2px solid var(--clr-accent);
 }
 
 .services .cards .card i {
@@ -1220,7 +1244,7 @@ header nav button a {
     perspective: 1200px;
 }
 
-/* CARD BASE & 3D FLIP SETUP (RESPONSIVE SIZE & ACCENT) */
+/* CARD BASE & 3D FLIP SETUP */
 .projects .card {
     position: absolute;
     width: 380px;
@@ -1392,16 +1416,16 @@ header nav button a {
     color: var(--clr-text-light);
 }
 
-/* 3D CAROUSEL STATES (WIDE DESKTOP SPACING) */
+/* 3D CAROUSEL STATES (WIDE DESKTOP SPACING FOR 11 ITEMS) */
 #p1:checked ~ .carousel-track #c1 { transform: translateX(0) translateZ(0) rotateY(0deg) scale(1); z-index: 10; opacity: 1; pointer-events: auto; }
-#p1:checked ~ .carousel-track #c10 { transform: translateX(-340px) translateZ(-160px) rotateY(20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
-#p1:checked ~ .carousel-track #c9 { transform: translateX(-580px) translateZ(-280px) rotateY(35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
+#p1:checked ~ .carousel-track #c11 { transform: translateX(-340px) translateZ(-160px) rotateY(20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
+#p1:checked ~ .carousel-track #c10 { transform: translateX(-580px) translateZ(-280px) rotateY(35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
 #p1:checked ~ .carousel-track #c2 { transform: translateX(340px) translateZ(-160px) rotateY(-20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
 #p1:checked ~ .carousel-track #c3 { transform: translateX(580px) translateZ(-280px) rotateY(-35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
 
 #p2:checked ~ .carousel-track #c2 { transform: translateX(0) translateZ(0) rotateY(0deg) scale(1); z-index: 10; opacity: 1; pointer-events: auto; }
 #p2:checked ~ .carousel-track #c1 { transform: translateX(-340px) translateZ(-160px) rotateY(20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
-#p2:checked ~ .carousel-track #c10 { transform: translateX(-580px) translateZ(-280px) rotateY(35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
+#p2:checked ~ .carousel-track #c11 { transform: translateX(-580px) translateZ(-280px) rotateY(35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
 #p2:checked ~ .carousel-track #c3 { transform: translateX(340px) translateZ(-160px) rotateY(-20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
 #p2:checked ~ .carousel-track #c4 { transform: translateX(580px) translateZ(-280px) rotateY(-35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
 
@@ -1445,13 +1469,19 @@ header nav button a {
 #p9:checked ~ .carousel-track #c8 { transform: translateX(-340px) translateZ(-160px) rotateY(20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
 #p9:checked ~ .carousel-track #c7 { transform: translateX(-580px) translateZ(-280px) rotateY(35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
 #p9:checked ~ .carousel-track #c10 { transform: translateX(340px) translateZ(-160px) rotateY(-20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
-#p9:checked ~ .carousel-track #c1 { transform: translateX(580px) translateZ(-280px) rotateY(-35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
+#p9:checked ~ .carousel-track #c11 { transform: translateX(580px) translateZ(-280px) rotateY(-35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
 
 #p10:checked ~ .carousel-track #c10 { transform: translateX(0) translateZ(0) rotateY(0deg) scale(1); z-index: 10; opacity: 1; pointer-events: auto; }
 #p10:checked ~ .carousel-track #c9 { transform: translateX(-340px) translateZ(-160px) rotateY(20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
 #p10:checked ~ .carousel-track #c8 { transform: translateX(-580px) translateZ(-280px) rotateY(35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
-#p10:checked ~ .carousel-track #c1 { transform: translateX(340px) translateZ(-160px) rotateY(-20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
-#p10:checked ~ .carousel-track #c2 { transform: translateX(580px) translateZ(-280px) rotateY(-35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
+#p10:checked ~ .carousel-track #c11 { transform: translateX(340px) translateZ(-160px) rotateY(-20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
+#p10:checked ~ .carousel-track #c1 { transform: translateX(580px) translateZ(-280px) rotateY(-35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
+
+#p11:checked ~ .carousel-track #c11 { transform: translateX(0) translateZ(0) rotateY(0deg) scale(1); z-index: 10; opacity: 1; pointer-events: auto; }
+#p11:checked ~ .carousel-track #c10 { transform: translateX(-340px) translateZ(-160px) rotateY(20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
+#p11:checked ~ .carousel-track #c9 { transform: translateX(-580px) translateZ(-280px) rotateY(35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
+#p11:checked ~ .carousel-track #c1 { transform: translateX(340px) translateZ(-160px) rotateY(-20deg) scale(0.85); z-index: 7; opacity: 0.85; pointer-events: auto; }
+#p11:checked ~ .carousel-track #c2 { transform: translateX(580px) translateZ(-280px) rotateY(-35deg) scale(0.7); z-index: 4; opacity: 0.6; pointer-events: auto; }
 
 /* FLIP ON CLICK (:focus) */
 #p1:checked ~ .carousel-track #c1 .card-inner:focus,
@@ -1463,7 +1493,8 @@ header nav button a {
 #p7:checked ~ .carousel-track #c7 .card-inner:focus,
 #p8:checked ~ .carousel-track #c8 .card-inner:focus,
 #p9:checked ~ .carousel-track #c9 .card-inner:focus,
-#p10:checked ~ .carousel-track #c10 .card-inner:focus {
+#p10:checked ~ .carousel-track #c10 .card-inner:focus,
+#p11:checked ~ .carousel-track #c11 .card-inner:focus {
     transform: rotateY(180deg);
 }
 
@@ -1506,6 +1537,7 @@ header nav button a {
 #p8:checked ~ .nav-arrows .arrow-left-p8, #p8:checked ~ .nav-arrows .arrow-right-p8 { display: flex; }
 #p9:checked ~ .nav-arrows .arrow-left-p9, #p9:checked ~ .nav-arrows .arrow-right-p9 { display: flex; }
 #p10:checked ~ .nav-arrows .arrow-left-p10, #p10:checked ~ .nav-arrows .arrow-right-p10 { display: flex; }
+#p11:checked ~ .nav-arrows .arrow-left-p11, #p11:checked ~ .nav-arrows .arrow-right-p11 { display: flex; }
 
 /* PAGINATION DOTS */
 .projects .dots-nav {
@@ -1534,7 +1566,8 @@ header nav button a {
 #p7:checked ~ .dots-nav label[for="p7"],
 #p8:checked ~ .dots-nav label[for="p8"],
 #p9:checked ~ .dots-nav label[for="p9"],
-#p10:checked ~ .dots-nav label[for="p10"] {
+#p10:checked ~ .dots-nav label[for="p10"],
+#p11:checked ~ .dots-nav label[for="p11"] {
     background-color: var(--clr-accent);
     width: 14px;
     height: 14px;
@@ -1552,10 +1585,10 @@ header nav button a {
     .projects .nav-arrow.left { left: calc(50% - 330px); }
     .projects .nav-arrow.right { right: calc(50% - 330px); }
 
-    #p1:checked ~ .carousel-track #c10, #p2:checked ~ .carousel-track #c1, #p3:checked ~ .carousel-track #c2, #p4:checked ~ .carousel-track #c3, #p5:checked ~ .carousel-track #c4, #p6:checked ~ .carousel-track #c5, #p7:checked ~ .carousel-track #c6, #p8:checked ~ .carousel-track #c7, #p9:checked ~ .carousel-track #c8, #p10:checked ~ .carousel-track #c9 { transform: translateX(-260px) translateZ(-140px) rotateY(20deg) scale(0.85); }
-    #p1:checked ~ .carousel-track #c9, #p2:checked ~ .carousel-track #c10, #p3:checked ~ .carousel-track #c1, #p4:checked ~ .carousel-track #c2, #p5:checked ~ .carousel-track #c3, #p6:checked ~ .carousel-track #c4, #p7:checked ~ .carousel-track #c5, #p8:checked ~ .carousel-track #c6, #p9:checked ~ .carousel-track #c7, #p10:checked ~ .carousel-track #c8 { transform: translateX(-450px) translateZ(-260px) rotateY(35deg) scale(0.7); }
-    #p1:checked ~ .carousel-track #c2, #p2:checked ~ .carousel-track #c3, #p3:checked ~ .carousel-track #c4, #p4:checked ~ .carousel-track #c5, #p5:checked ~ .carousel-track #c6, #p6:checked ~ .carousel-track #c7, #p7:checked ~ .carousel-track #c8, #p8:checked ~ .carousel-track #c9, #p9:checked ~ .carousel-track #c10, #p10:checked ~ .carousel-track #c1 { transform: translateX(260px) translateZ(-140px) rotateY(-20deg) scale(0.85); }
-    #p1:checked ~ .carousel-track #c3, #p2:checked ~ .carousel-track #c4, #p3:checked ~ .carousel-track #c5, #p4:checked ~ .carousel-track #c6, #p5:checked ~ .carousel-track #c7, #p6:checked ~ .carousel-track #c8, #p7:checked ~ .carousel-track #c9, #p8:checked ~ .carousel-track #c10, #p9:checked ~ .carousel-track #c1, #p10:checked ~ .carousel-track #c2 { transform: translateX(450px) translateZ(-260px) rotateY(-35deg) scale(0.7); }
+    #p1:checked ~ .carousel-track #c11, #p2:checked ~ .carousel-track #c1, #p3:checked ~ .carousel-track #c2, #p4:checked ~ .carousel-track #c3, #p5:checked ~ .carousel-track #c4, #p6:checked ~ .carousel-track #c5, #p7:checked ~ .carousel-track #c6, #p8:checked ~ .carousel-track #c7, #p9:checked ~ .carousel-track #c8, #p10:checked ~ .carousel-track #c9, #p11:checked ~ .carousel-track #c10 { transform: translateX(-260px) translateZ(-140px) rotateY(20deg) scale(0.85); }
+    #p1:checked ~ .carousel-track #c10, #p2:checked ~ .carousel-track #c11, #p3:checked ~ .carousel-track #c1, #p4:checked ~ .carousel-track #c2, #p5:checked ~ .carousel-track #c3, #p6:checked ~ .carousel-track #c4, #p7:checked ~ .carousel-track #c5, #p8:checked ~ .carousel-track #c6, #p9:checked ~ .carousel-track #c7, #p10:checked ~ .carousel-track #c8, #p11:checked ~ .carousel-track #c9 { transform: translateX(-450px) translateZ(-260px) rotateY(35deg) scale(0.7); }
+    #p1:checked ~ .carousel-track #c2, #p2:checked ~ .carousel-track #c3, #p3:checked ~ .carousel-track #c4, #p4:checked ~ .carousel-track #c5, #p5:checked ~ .carousel-track #c6, #p6:checked ~ .carousel-track #c7, #p7:checked ~ .carousel-track #c8, #p8:checked ~ .carousel-track #c9, #p9:checked ~ .carousel-track #c10, #p10:checked ~ .carousel-track #c11, #p11:checked ~ .carousel-track #c1 { transform: translateX(260px) translateZ(-140px) rotateY(-20deg) scale(0.85); }
+    #p1:checked ~ .carousel-track #c3, #p2:checked ~ .carousel-track #c4, #p3:checked ~ .carousel-track #c5, #p4:checked ~ .carousel-track #c6, #p5:checked ~ .carousel-track #c7, #p6:checked ~ .carousel-track #c8, #p7:checked ~ .carousel-track #c9, #p8:checked ~ .carousel-track #c10, #p9:checked ~ .carousel-track #c11, #p10:checked ~ .carousel-track #c1, #p11:checked ~ .carousel-track #c2 { transform: translateX(450px) translateZ(-260px) rotateY(-35deg) scale(0.7); }
 }
 
 @media (max-width: 768px) {
@@ -1602,16 +1635,17 @@ header nav button a {
     .projects .nav-arrow.left { left: 5px; }
     .projects .nav-arrow.right { right: 5px; }
 
-    #p1:checked ~ .carousel-track #c9, #p1:checked ~ .carousel-track #c3,
-    #p2:checked ~ .carousel-track #c10, #p2:checked ~ .carousel-track #c4,
+    #p1:checked ~ .carousel-track #c10, #p1:checked ~ .carousel-track #c3,
+    #p2:checked ~ .carousel-track #c11, #p2:checked ~ .carousel-track #c4,
     #p3:checked ~ .carousel-track #c1, #p3:checked ~ .carousel-track #c5,
     #p4:checked ~ .carousel-track #c2, #p4:checked ~ .carousel-track #c6,
     #p5:checked ~ .carousel-track #c3, #p5:checked ~ .carousel-track #c7,
     #p6:checked ~ .carousel-track #c4, #p6:checked ~ .carousel-track #c8,
     #p7:checked ~ .carousel-track #c5, #p7:checked ~ .carousel-track #c9,
     #p8:checked ~ .carousel-track #c6, #p8:checked ~ .carousel-track #c10,
-    #p9:checked ~ .carousel-track #c7, #p9:checked ~ .carousel-track #c1,
-    #p10:checked ~ .carousel-track #c8, #p10:checked ~ .carousel-track #c2 {
+    #p9:checked ~ .carousel-track #c7, #p9:checked ~ .carousel-track #c11,
+    #p10:checked ~ .carousel-track #c8, #p10:checked ~ .carousel-track #c1,
+    #p11:checked ~ .carousel-track #c9, #p11:checked ~ .carousel-track #c2 {
         opacity: 0;
     }
 }
@@ -1837,7 +1871,6 @@ header nav button a {
     width: max-content;
     justify-self: center;
     margin: 0 20px 20px;
-    padding: 30px;
     border: none;
     border-radius: var(--radius-md);
     background-color: var(--clr-accent);
@@ -1848,10 +1881,13 @@ header nav button a {
     color: var(--clr-text-light);
     text-decoration: none;
     font-size: 20px;
+    padding: 30px 40px;
+    display: inline-block;
 }
 .contact .content-right button i {
-    margin: 10px 10px 10px 20px;
+    margin: 20px 20px 20px 0;
     font-size: 20px;
+    color: var(--clr-primary);
 }
 .contact .content-right button:hover i {
     animation: arrow-qoute .5s infinite alternate;
